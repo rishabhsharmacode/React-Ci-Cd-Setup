@@ -23,13 +23,13 @@ pipeline {
             }
         }
 
-        stage('Take approval') {
+        /* stage('Take approval') {
             steps {
                 timeout(time: 1, unit: 'MINUTES') {
                     input message: 'Do you want to proceed?', ok: 'Proceed'
                 }
             }
-        }
+        } */
 
         stage('Build') {
             agent {
